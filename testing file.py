@@ -3,15 +3,15 @@ list = []
 goal = []
 penissortedlist = []
 penis = 0
-a=10000
+a=100
 for i in range(1,a+1):
     list.append(i)
 for k in range(1,a+1):
     goal.append(k)
 random.shuffle(list)
 while penissortedlist != goal:
-    print(penissortedlist+list)
     if list[penis] == min(list):
+        print(penissortedlist+list)
         penissortedlist.append(list[penis])
         list.remove(list[penis])
         penis = 0
